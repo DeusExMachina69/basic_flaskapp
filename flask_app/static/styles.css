@@ -1,0 +1,65 @@
+/* home page styles */
+    /* top nav bar  */
+
+    /*
+.home-top-container {
+    background-color: aqua;
+    height: 100vh; 
+    width: 100vw;
+}
+
+.top-navbar {
+    background-color: rgb(69, 231, 90);
+    height: 10%;
+}
+
+.top-nav-expand {
+
+}
+
+.top-nav-option {
+
+} */
+
+
+/* signup page styles */
+
+#password_check_display {
+    visibility: hidden;
+    position: absolute;
+}
+ 
+
+#password_check_display ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+#password_check_display li {
+    width: 30vw; 
+    border-radius: 10px;
+}
+
+#password_match_message {
+    visibility: hidden; 
+    position: absolute; 
+    width: 30vw; 
+}
+
+/*
+.password_check_display_collapsed {
+    visibility: hidden;
+    position: absolute;
+}
+
+.password_check_display_expanded {
+    visibility: visible;
+    position: fixed;
+}       
+*/
+
+/* login page styles  */
+
+/*  */
+
+/*  */

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title%} Sign-Up {% endblock %}
+
+{% block scripts %}
+    <script defer src="../static/signup_script.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="signup-main-container">
+
+    <form action="submit" method="POST" id="signup_form">
+        <ul class="list-group">   
+            <li class="list-group-item">
+                <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" placeholder="First Name" id="first_name" />
+            </li>
+
+            <li class="list-group-item">
+                <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" placeholder="Last Name" id="last_name" />
+            </li>
+
+            <li class="list-group-item">
+                <label for="userName">User Name: </label>
+                    <input type="text" name="userName" placeholder="User Name" id="user_name" />
+            </li>
+
+            <li class="list-group-item">
+                <label for="email">E-mail: </label>
+                    <input type="email" name="e-mail" placeholder="E-mail" id="email" />
+            </li>
+
+            <li class="list-group-item">
+                <label for="password1">Password: </label>
+                    <input type="password" name="password1" placeholder="Password" id="password_1" />
+            </li>
+
+            <div id="password_check_display">
+                <ul>
+                    
+                    <li id="password_check_length">
+                        <p><i class="far fa-check-circle" id="len_checkbox"></i>Password must be more than 8 characters</p>
+                    </li>
+
+                    <li id="password_check_num">
+                        <p><i class="far fa-check-circle" id="num_checkbox"></i>Password must contain at least one number.</p>
+                    </li>
+                    
+                    <li id="password_check_special_char">
+                        <p><i class="far fa-check-circle" id="special_char_checkbox"></i>Password must at least one special character <br /> 
+                            (&quot;!&quot;,&quot;@&quot;, &quot;#&quot;, &quot;?&quot;, etc.). </p>
+                    </li>
+
+                    <li id="password_check_capital_char">
+                        <p><i class="far fa-check-circle" id="capital_checkbox"></i>Password must contain at least one capital letter.</p>
+                    </li>
+
+                    <li id="password_check_lowercase_char">
+                        <p><i class="far fa-check-circle" id="lowercase_checkbox"></i>Password must contain at least one lowercase letter.</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <li class="list-group-item">
+                <label for="password2">Confirm Password: </label>
+                    <input type="password" name="password2" placeholder="Re-enter Password" id="password_2" />
+            </li>
+            <li class="list-group-item" id="password_match_message">
+                <p>Passwords don't match. </p>
+            </li>
+
+            <li class="list-group-item">
+                <button type="submit" class="btn btn-primary"> Submit </button>
+            </li>
+        </ul>
+    </form>
+
+</div>
+{% endblock %}
