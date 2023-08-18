@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+    <script defer src="../static/login_script.js"></script>
+{% endblock %}
+
+
+{% block title %}
+    Log In
+{% endblock %}
+{% block content %}
+<div class="login-main-container">
+    <form action="submit" method="POST" id="login_form">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <label for="userName">Username: </label>
+                    <input type="text" name="userName" placeholder="Username" id="login_username">
+            </li>
+
+            <li class="list-group-item">
+                <label for="passWord">Password: </label>
+                    <input type="password" name="passWord" placeholder="Password" id="login_password">
+            </li>
+
+            <li class="list-group-item">
+                <button type="submit" class="btn btn-primary"> Submit </button>
+            </li>
+        </ul>
+
+
+    </form>
+</div>
+
+{% endblock %}
