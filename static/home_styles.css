@@ -1,0 +1,44 @@
+.user_pamphlet {
+    background-color: lightblue;
+    width: 50vw;
+    height: 40vh;
+    float: right;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px:
+    
+}
+
+.user_grid_item {
+    border-color: black; 
+    border-style: solid;
+    border-width: 3px;
+    margin: auto;
+    margin-bottom: 0px;
+    display: inherit;
+}
+
+#pamphlet_user {
+
+}
+
+#pamphlet_user h4 {
+    margin-bottom: 0;
+}
+
+
+#pamphlet_info {
+
+}
+
+#pamphlet_info h4 {
+    margin-bottom: 0;
+    height: inherit;
+    width: inherit;
+}
+
+
+#pamphlet_logout {
+
+}

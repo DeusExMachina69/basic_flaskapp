@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title%} Home {% endblock %}
+
+{% block scripts %}
+    <link type="text/css" rel="stylesheet" href="../static/home_styles.css" />
+{% endblock %}
+
+{% block content %}
+<div class="home-top-container">
+
+   
+    <!-- main container -->
+    <div class="main">
+        <div class="user_pamphlet">
+            <div class="user_grid_item" id="pamphlet_user">
+                <h4>User</h4>
+            </div> 
+            <div class="user_grid_item" id="pamphlet_info">
+                <h4>Info</h4>
+            </div>
+            <form action="log_out" method="POST" class="user_grid_item" id="pamphlet_logout">
+                <button type="submit" class="btn btn-primary"> Log Out </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
