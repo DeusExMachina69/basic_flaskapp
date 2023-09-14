@@ -14,13 +14,17 @@
     border-color: black; 
     border-style: solid;
     border-width: 3px;
-    margin: auto;
     margin-bottom: 0px;
     display: inherit;
 }
 
 #pamphlet_user {
-
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-column-start: span 3;
+    grid-column-end: span 4;
+    grid-row-start: span 2;
+    grid-row-end: span 3;
 }
 
 #pamphlet_user h4 {
@@ -29,16 +33,23 @@
 
 
 #pamphlet_info {
-
+   grid-column: 1/2;
+   grid-row: 3;
+   grid-column-start: span 2;
+   grid-column-end: span 3;
+   grid-row-start: span 1;
+   grid-row-end: span 2;
 }
 
 #pamphlet_info h4 {
     margin-bottom: 0;
     height: inherit;
     width: inherit;
+
 }
 
 
-#pamphlet_logout {
+#pamphlet_logout button {
+    padding: 0;
 
 }

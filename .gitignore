@@ -1,0 +1,5 @@
+.env/*
+.misc/*
+__pycache__/*
+instance/*
+

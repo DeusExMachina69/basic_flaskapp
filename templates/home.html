@@ -1,26 +1,20 @@
 {% extends "base.html" %}
-{% block title%} Home {% endblock %}
+{% block title %} Home {% endblock %}
 
 {% block scripts %}
-    <link type="text/css" rel="stylesheet" href="../static/home_styles.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/home_styles.css" />
+    <script defer src="../static/js/home_script.js" />
 {% endblock %}
 
 {% block content %}
-<div class="home-top-container">
-
-   
-    <!-- main container -->
-    <div class="main">
-        <div class="user_pamphlet">
-            <div class="user_grid_item" id="pamphlet_user">
-                <h4>User</h4>
-            </div> 
-            <div class="user_grid_item" id="pamphlet_info">
-                <h4>Info</h4>
-            </div>
-            <form action="log_out" method="POST" class="user_grid_item" id="pamphlet_logout">
-                <button type="submit" class="btn btn-primary"> Log Out </button>
-            </form>
+<div class="home-top-container">                                        <!-- landing viewport -->
+    <div class="main">                                                  <!-- main container -->
+        <div class="user_pamphlet">                                     <!-- pamphlet -->
+            <div class="user_grid_item" id="pamphlet_user">{{ user }}</div><!-- pamphlet user grid box -->
+            <div class="user_grid_item" id="pamphlet_info">{{ user_info }}</div><!-- pamphlet user_info grid box -->
+            <form action="log_out" method="POST" class="user_grid_item" id="pamphlet_logout">   <!---pamphlet-->
+                <button type="submit" class="btn btn-primary"> Log Out </button>                <!---log_out--->
+            </form>                                                                             <!---grid_box-->
         </div>
     </div>
 </div>

@@ -11,6 +11,7 @@ bsdutils
 build-essential
 chrony
 cloud-init
+cmake
 cups
 cups-bsd
 cups-client
@@ -161,6 +162,7 @@ tpm-udev
 ubuntu-minimal
 ubuntu-server
 ubuntu-standard
+unzip
 usb-modeswitch
 usb-modeswitch-data
 wget
